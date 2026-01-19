@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat UI — Gemini</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="new-chat-btn">
+                    <i class="fa-solid fa-plus"></i>
+                    <span>New chat</span>
+                </div>
+            </div>
+
+            <div class="sidebar-nav">
+                <div class="nav-section">
+                    <span class="nav-label">Today</span>
+                    <a href="#" class="nav-item active">
+                        <i class="fa-regular fa-message"></i>
+                        <span class="text-truncate">Project Brainstorming</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="fa-regular fa-message"></i>
+                        <span class="text-truncate">React Component Design</span>
+                    </a>
+                </div>
+
+                <div class="nav-section">
+                    <span class="nav-label">Yesterday</span>
+                    <a href="#" class="nav-item">
+                        <i class="fa-regular fa-message"></i>
+                        <span class="text-truncate">Debugging Python Script</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="fa-regular fa-message"></i>
+                        <span class="text-truncate">CSS Grid Layouts</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="fa-regular fa-message"></i>
+                        <span class="text-truncate">API Authentication</span>
+                    </a>
+                </div>
+
+                <div class="nav-section">
+                    <span class="nav-label">Previous 7 Days</span>
+                    <a href="#" class="nav-item">
+                        <i class="fa-regular fa-message"></i>
+                        <span class="text-truncate">Machine Learning Basics</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="fa-regular fa-message"></i>
+                        <span class="text-truncate">Recipe Ideas</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="sidebar-footer">
+                <a href="#" class="footer-item">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Upgrade plan</span>
+                </a>
+                <a href="#" class="footer-item">
+                    <img src="https://ui-avatars.com/api/?name=User&background=random" alt="User" class="user-avatar">
+                    <span>User Account</span>
+                </a>
+            </div>
+        </aside>
+
+        
+        <main class="chat-area">
+            <header class="chat-header">
+                <div class="model-selector">
+                    <span>Gemini Pro</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="mobile-menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </header>
+
+            <div class="messages-container empty">
+                <div class="empty-state">
+                    <div class="empty-icon">
+                        <i class="fa-solid fa-sparkles"></i>
+                    </div>
+                    <h2>Welcome — how can I help you today?</h2>
+                </div>
+            </div>
+
+            <div class="input-area-wrapper">
+                <div class="input-area">
+                    <div class="input-controls-left">
+                        <button class="attach-btn"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                    <input type="text" placeholder="Type a message…" aria-label="Message input">
+                    <div class="input-controls-right">
+                        <button class="mic-btn"><i class="fa-solid fa-microphone"></i></button>
+                        <button class="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+                    </div>
+                </div>
+                <div class="disclaimer">
+                    AI can make mistakes. Consider checking important information.
+                </div>
+            </div>
